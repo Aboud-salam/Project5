@@ -1,0 +1,206 @@
+:root {
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.main-btn {
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+}
+.main-btn:hover {
+    color: var(--yellow-color);
+    background-color: var(--red-color);
+}
+.main-btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13,110,253,.25);
+}
+.navbar {
+    background-color: var(--dark-color);
+}
+.navbar .navbar-nav li .nav-link {
+    color: white;
+}
+.navbar .navbar-nav li .nav-link.active,
+.navbar .navbar-nav li .nav-link:focus,
+.navbar .navbar-nav li .nav-link:hover {
+    color: var(--green-color);
+}
+.navbar .navbar-toggler svg {
+    color: white;
+}
+.navbar .navbar-toggler { 
+    border: 1px solid var(--green-color);
+}
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar .collapse .search {
+    border-left: 1px solid var(--green-color);
+    /* cursor: pointer; */
+}
+.navbar .collapse .search svg {
+    color: var(--green-color);
+}
+/* end of nav */
+/* start of landing */
+.landing {
+    background-color: var(--dark-color);
+    min-height: calc(100vh - 72px);
+}
+/* end of landing */
+/* start of features */
+.main-title::after {
+    content: '';
+    position: absolute;
+    width: 120px;
+    background-color: var(--green-color);
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20px;
+}
+.features .icons svg:first-child {
+    font-size: 12rem;
+    color: var(--section-color);
+}
+.features .icons svg:nth-child(2) {
+    font-size: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    z-index: 1;
+    color: var(--green-color);
+}
+.features .content h4 {
+    color: var(--yellow-color);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.features .row .content p {
+    font-weight: bold;
+    line-height: 1.6;
+    font-weight: 500;
+}
+/* end of features */
+/* start of our work */
+.our-work {
+    background-color: var(--section-color);
+}
+.our-work .container ul li {
+    cursor: pointer;
+}
+.our-work .container ul li:hover {
+    color: var(--red-color);
+}
+.our-work .container ul li.active {
+    border-radius: 50rem;
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+.our-work .container .image {
+    padding: 5px;
+}
+.our-work .container .image::before {
+    content: attr(data-work);
+    position: absolute;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(51 209 204 / 75%);
+    z-index: 1;
+    top: 5px;
+    left: -100%;
+    transition: .3s;
+}
+.our-work .container .image:hover::before {
+    left: 5px;
+}
+/* end of work */
+/* start of about us */
+.about-us .about-p {
+    max-width: 500px;
+    margin: 0 auto;
+}
+/* end of about us */
+/* start of meet our team */
+.meet-team {
+    background-color: var(--section-color);
+}
+.meet-team .container h2 {
+    font-weight: bold;
+    color: var(--yellow-color);
+}
+.meet-team .container .box .img-footer {
+    background-color: var(--green-color);
+    color: white;
+}
+/* team end */
+/* start proj */
+.start-project {
+    background-color: var(--dark-color);
+}
+/* end of start proj */
+/* start of subscribe */
+.subscribe {
+    background-color: var(--yellow-color);
+}
+.subscribe .container form .input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #eee;
+    caret-color: white;
+}
+.subscribe .container .input::placeholder {
+    color: white;
+}
+.subscribe .container form .submit {
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+    padding: .5rem 1rem;
+}
+/* end of subscribe */
+/* start of footer */
+.footer {
+    background-color: var(--dark-color);
+}
+.footer .container .creator p:first-child span {
+    color: var(--green-color);
+} 
+.footer .container .creator p:last-child span {
+    color: var(--yellow-color);
+}
+.footer .container .contact-us .icons svg {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    margin-right: 1rem;
+    color: white;
+}
+.footer .container .contact-us .icons .fb {
+    background-color: #1877f2;
+}
+.footer .container .contact-us .icons .li {
+    background-color: #0a66c2;
+}
+.footer .container .contact-us .icons .tw {
+    background-color: #1da1f2;
+}
+.footer .container .contact-us .icons .yt {
+    background-color: #ff0000;
+}
+/* end of footer */
