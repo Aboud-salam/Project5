@@ -12,7 +12,6 @@ body {
     background-color: var(--red-color);
     color: var(--yellow-color);
     padding: 0.5rem 1rem;
-    font-weight: 700;
 }
 .main-btn:hover {
     color: var(--yellow-color);
