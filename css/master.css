@@ -95,8 +95,9 @@ body {
 }
 .our-work .container ul li {
     cursor: pointer;
+    transition: .3s;
 }
-.our-work .container ul li:hover {
+.our-work .container ul li:not(.active):hover {
     color: var(--red-color);
 }
 .our-work .container ul li.active {
